@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:scrolls/HomeScreen/home.dart';
+import 'package:scrolls/HomeScreen/midscreen.dart';
 import 'package:scrolls/pageview/secondscreen.dart';
 import 'package:scrolls/pageview/threescreen.dart';
 
@@ -17,7 +18,7 @@ class ScreenBuilder extends StatelessWidget {
         children: <Widget>[
           Container(height: 775,child: new MyHomePage()),
           Expanded(child: Container(color: Colors.green,child: Center(child:GestureDetector(onTap: (){
-            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home()));
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Mid()));
           },child: Text("PROCEED",style: TextStyle(color: Colors.white),),),),))
         ],
       ),

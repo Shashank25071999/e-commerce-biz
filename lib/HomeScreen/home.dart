@@ -80,24 +80,88 @@ class HomeState extends State<Home> {
                         padding: EdgeInsets.symmetric(horizontal: 25),
                         child: Container(
                           height:  (MediaQuery.of(context).size.width-53)*2/3,
-                          color: Color(0xffefb168),
+                          color: Color(0xff1F1F1F),
                           width: MediaQuery.of(context).size.width-50,
                           child: Column(
                             children: <Widget>[
                               Row(children: <Widget>[
                                
-                                 Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,color: Color(0xff1f1f1f)),)),
-                                Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(color: Color(0xff1f1f1f),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,),)),
-                                Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(color: Color(0xff1f1f1f),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,),)),
+                                 Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(child:GestureDetector(child: Column(
+                                   mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.center,
+                                   children: <Widget>[
+                                   Container(child:  Image.asset("assets/computer.png"), height:50 ,width: 50,),
+                                   Padding(
+                                     padding: const EdgeInsets.only(top:8.0,left: 8,right: 8),
+                                     child: Text("COMPUTER SCIENCE",style: TextStyle(color: Color(0xffefb168),fontSize: 10,),textAlign: TextAlign.center,),
+                                   )
+                                 ],),onTap: (){
+                                   print("Shah");
+                                 },),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,color: Color(0xff1f1f1f)),)),
+
+                                 
+                                Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(child:GestureDetector(child: Column(
+                                   mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.center,
+                                   children: <Widget>[
+                                   Container(child:  Image.asset("assets/mech.png"), height:50 ,width: 50,),
+                                   Padding(
+                                     padding: const EdgeInsets.only(top:8.0,left: 8,right: 8),
+                                     child: Text("MECHANICAL ENGINEERING",style: TextStyle(color: Color(0xffefb168),fontSize: 10,),textAlign: TextAlign.center,),
+                                   )
+                                 ],),onTap: (){
+                                   print("Shah");
+                                 },),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,color: Color(0xff1f1f1f)),)),
+
+                                 Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(child:GestureDetector(child: Column(
+                                   mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.center,
+                                   children: <Widget>[
+                                   Container(child:  Image.asset("assets/electrical.png"), height:50 ,width: 50,),
+                                   Padding(
+                                     padding: const EdgeInsets.only(top:8.0,left: 8,right: 8),
+                                     child: Text("ELECTRICAL ENGINEERING",style: TextStyle(color: Color(0xffefb168),fontSize: 10,),textAlign: TextAlign.center,),
+                                   )
+                                 ],),onTap: (){
+                                   print("Shah");
+                                 },),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,color: Color(0xff1f1f1f)),)),
                                 
                                 
                               ],),
                               Row(children: <Widget>[
-                               
-                                 Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,color: Color(0xff1f1f1f)),)),
-                                Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(color: Color(0xff1f1f1f),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,),)),
-                                Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(color: Color(0xff1f1f1f),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,),)),
-                                
+                                Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(child:GestureDetector(child: Column(
+                                   mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.center,
+                                   children: <Widget>[
+                                   Container(child:  Image.asset("assets/electronics.png"), height:50 ,width: 50,),
+                                   Padding(
+                                     padding: const EdgeInsets.only(top:8.0,left: 8,right: 8),
+                                     child: Text("ELECTRONICS ENGINEERING",style: TextStyle(color: Color(0xffefb168),fontSize: 10,),textAlign: TextAlign.center,),
+                                   )
+                                 ],),onTap: (){
+                                   print("Shah");
+                                 },),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,color: Color(0xff1f1f1f)),)),
+
+                                 
+                                Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(child:GestureDetector(child: Column(
+                                   mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.center,
+                                   children: <Widget>[
+                                   Container(child:  Image.asset("assets/civil.png"), height:50 ,width: 50,),
+                                   Padding(
+                                     padding: const EdgeInsets.only(top:8.0,left: 8,right: 8),
+                                     child: Text("CIVIL ENGINEERING",style: TextStyle(color: Color(0xffefb168),fontSize: 10,),textAlign: TextAlign.center,),
+                                   )
+                                 ],),onTap: (){
+                                   print("Shah");
+                                 },),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,color: Color(0xff1f1f1f)),)),
+
+                                 Expanded(child: Padding(padding: EdgeInsets.all(.5),child: Container(child:GestureDetector(child: Column(
+                                   mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.center,
+                                   children: <Widget>[
+                                   Container(child:  Image.asset("assets/manag.png"), height:50 ,width: 50,),
+                                   Padding(
+                                     padding: const EdgeInsets.only(top:8.0,left: 8,right: 8),
+                                     child: Text("MANAGEMENT",style: TextStyle(color: Color(0xffefb168),fontSize: 10,),textAlign: TextAlign.center,),
+                                   )
+                                 ],),onTap: (){
+                                   print("Shah");
+                                 },),height: (MediaQuery.of(context).size.width-56)/3,width: (MediaQuery.of(context).size.width-56)/3,color: Color(0xff1f1f1f)),)),
                                 
                               ],),
                               

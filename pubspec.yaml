@@ -53,6 +53,13 @@ flutter:
     - assets/rules.jpg
     - assets/sched.jpg
     - assets/bg2.gif
+    - assets/electrical.png
+    - assets/electronics.png
+    - assets/mech.png
+    - assets/manag.png
+    - assets/civil.png
+    - assets/computer.png
+    
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
